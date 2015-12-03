@@ -64,11 +64,18 @@ def scytale_decrypt(cipher_text, key):
 
 
 def main():
-    s = "Hello, World, Earth, Indonesia"
+    s = "In cryptography, a scytale (rhymes with Italy) is a tool used to\
+perform a transposition cipher, consisting of a cylinder with a\
+strip of parchment wound around it on which is written a message.\
+The ancient Greeks, and the Spartans in particular, are said to\
+have used this cipher to communicate during military campaigns.\
+"
     c = scytale_encrypt(s, 4)
     d = scytale_decrypt(c, 4)
 
-    print "%s\n%s\n%s" % (s,c,d)
+    print "String:    %s \n" % (s)
+    print "Encrypted: %s \n" % (c)
+    print "Decrypted: %s \n" % (d)
 
 
 if __name__ == '__main__':
